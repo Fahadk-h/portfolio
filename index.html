@@ -70,7 +70,8 @@
 								<h2 class="major">Who am I</h2>
 								<span class="image main"><img src="assets\images\pic01.jpg" alt="" /></span>
 								<p>My name is Fahad, I excavate insightful information from data. I am based in Riyadh, KSA. I specialize in data cleaning, modeling, visualization, BI, advance SQL and have solid knowledge of programming languages and structure.</p>
-								<p>I have a bachelors degree in Information systems. I’ve developed websites and a mobile fintech application. After graduation, I coordinated projects, worked on in-house application solution and implementing business intelligence to inform future decision making. Along with some interesting personal projects you can browse here.</p>
+								<p>I have a bachelors degree in Information systems. I’ve developed websites and a mobile fintech application. After graduation, I coordinated projects, worked on in-house application solution and implementing business intelligence to inform future decision making.
+									 Along with some interesting personal projects you can browse <a href="#projects">here</a>.</p>
 								<p>I work out, play video games and grow plants. These activities taught me to be focused, sharp and persistent. Discipline and patience gave a better understanding that I can support people I work with to reach high mountain.</p>
 								<p>Though I need my time to charge my social battery, I spend time reading books or trying very hard not to be a bad cook 👨🏽‍🍳.</p>
 							</article>
@@ -94,6 +95,7 @@
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">Projects</h2>
+								<h3>Spotify tracks Dashboard</h3>
 								<div class="slider-container">
 									<div class="slider">
 										<img src="/assets/proj/spotify1.png">
@@ -101,6 +103,21 @@
 										<img src="/assets/proj/spotify3.png">
 									</div>
 								</div>
+								<p><i>Most Streamed Spotify Songs 2023 dataset published by Nidula Elgiriyewithana</i> on 
+									<a href="https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023">Kaggle</a>.<br> I wanted to answer the following questions about the dataset:</p>
+								<p></p>
+								<ol>
+									<li>Leaverage ChatGPT to enrich dataset and use external tools</li>
+									<li>What is the highest streamed track?</li>
+									<li>What are the average streams per year vs top song?</li>
+									<li>What are characteristics in popular songs?</li>
+									<li>When Tracks were released?</li>
+								</ol>
+								<p>First, I wanted to ChatGPT to enrich the data. I gave it the dataset then asked for column with URLs of the song or album. It had some problems connecting the internet and therefore cannot do what I asked by its self, so I asked GPT to give me steps for using Spotify developer API and python script needed. Running the python script output a new CSV file with the URL column added. Navigating to it shows the cover. I proceeded to create background canvas for PBI.</p>
+								<p>After a close inspection of the dataset, it did not have a date column, but there is information about the year, month and day. To implement time intelligence in this dashboard, I used a calculated column to combine this information using the “date” function then used Bravo, an external tool to create a calendar table. Now I was able to create a line chart using dates from the date table to visualize count of tracks released by day.</p>
+								<p>Next, I quickly created 3 slicers at the ribbon, by Date range, Arist and track, helps you find more insight about the dataset then bar charts with number of steams for each track artist, this easily shows you the highest streamed tracks and popular artists filtered by most streams. I included more information about total streams, number tracks and number of participating artists utilizing cards KPIs. Right below it added more cards to show you what track achieved the highest number of streams, its name, release date and the artist’s name. The noticeable point is that even though Ed Sheeran’s “shape of you” ranked second most streamed, Bad Bunny ranked second most popular artist, a 26 total tracks with 15.4bn streams vs Ed Sheeran’s 13 total tracks with 14.6bn streams. </p>
+								<hr />
+
 							</article>
 				
 

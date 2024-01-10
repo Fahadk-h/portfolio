@@ -1562,7 +1562,7 @@ input, select, textarea {
 			.slider{
 				width: 100%;
 				display: flex;
-				margin:100px auto ;
+				margin-bottom:10px;
 				animation: slide 10s infinite;
 					}
 	
