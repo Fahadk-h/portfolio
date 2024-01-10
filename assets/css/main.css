@@ -1276,6 +1276,7 @@ input, select, textarea {
 				width: 1px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
+				opacity: 0;
 			}
 
 		#header > :first-child {
@@ -1287,11 +1288,12 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 12rem;
+			height: 12rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 3px #ffffff;
 			border-radius: 100%;
+			overflow: hidden;
 		}
 
 			#header .logo .icon:before {
@@ -1562,7 +1564,6 @@ input, select, textarea {
 			.slider{
 				width: 100%;
 				display: flex;
-				margin-bottom:10px;
 				animation: slide 10s infinite;
 					}
 	
